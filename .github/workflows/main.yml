@@ -1,0 +1,12 @@
+name: Basic Comandas
+on:
+   push:
+      branches:
+         -main
+         -newB
+jobs:
+  demo-comandas1:
+     run-on-: ubuntu-latest
+     steps:
+       -name: show current working directory
+        run:pwd
