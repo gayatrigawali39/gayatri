@@ -2,11 +2,11 @@ name: Basic Comandas
 on:
    push:
       branches:
-         -main
-         -newB
+         - main
+       
 jobs:
   demo-comandas1:
-     run-on-: ubuntu-latest
-     steps:
-       -name: show current working directory
-        run:pwd
+    runs-on: ubuntu-latest
+    steps:
+     - name: show current working directory
+       run: pwd
